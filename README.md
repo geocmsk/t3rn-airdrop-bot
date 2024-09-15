@@ -1,80 +1,80 @@
 # t3rn-airdrop-bot
 
-A bot designed to automate transactions and bridge assets on the t3rn network, making the process seamless and efficient. Now supports both Optimism Sepolia and Arbitrum Sepolia testnets.
+T3rn ağında işlemleri otomatikleştirmek ve varlıklar arasında köprü kurmak için tasarlanmış bir bot, süreci sorunsuz ve verimli hale getiriyor. Artık hem Optimism Sepolia hem de Arbitrum Sepolia test ağlarını destekliyor.
 
-## Features
+## Özellikler
 
-- Automates asset bridging and swapping on the t3rn network.
-- Supports multiple wallets through a JSON file containing private keys.
-- Robust error handling with retry mechanisms to ensure all transactions are completed.
-- User-friendly and easy to set up.
-- Supports bridging from **Optimism Sepolia** and **Arbitrum Sepolia**.
+- t3rn ağında varlık köprüleme ve takasını otomatikleştirir.
+- Özel anahtarlar içeren bir JSON dosyası aracılığıyla birden fazla cüzdanı destekler.
+- Tüm işlemlerin tamamlandığından emin olmak için yeniden deneme mekanizmalarıyla sağlam hata işleme.
+- Kullanıcı dostu ve kurulumu kolay.
+- **Optimism Sepolia** ve **Arbitrum Sepolia**'dan köprülemeyi destekler.
 
-## Requirements
+## Gereksinimler
 
-- Node.js (v14 or later)
-- NPM (v6 or later)
-- Private keys for the wallets you intend to use (stored in `privateKeys.json`).
+- Node.js (v14 veya üzeri)
+- NPM (v6 veya üzeri)
+- Kullanmayı planladığınız cüzdanlar için özel anahtarlar (`privateKeys.json` dosyasında saklanır).
 
-## Installation
+## Kurulum
 
-1. **Clone the Repository**:
+1. **Depoyu Klonla**:
 
-   ```bash
-   git clone https://github.com/dante4rt/t3rn-airdrop-bot.git
-   cd t3rn-airdrop-bot
-   ```
+```bash
+git clone https://github.com/dante4rt/t3rn-airdrop-bot.git
+cd t3rn-airdrop-bot
+```
 
-2. **Install Dependencies**:
+2. **Bağımlılıkları Yükle**:
 
-   ```bash
-   npm install
-   ```
+```bash
+npm install
+```
 
-3. **Create `privateKeys.json`**:
-   Create a file named `privateKeys.json` in the root directory with the following format:
+3. **`privateKeys.json`** Oluştur:
+Kök dizinde aşağıdaki biçimde `privateKeys.json` adlı bir dosya oluştur:
 
-   ```json
-   [
-     "your_private_key_1",
-     "your_private_key_2"
-   ]
-   ```
+```json
+[
+"your_private_key_1",
+"your_private_key_2"
+]
+```
 
-4. **Run the Bot**:
+4. **Botu Çalıştır**:
 
-   - To check the available menu options:
+- Kullanılabilir menü seçeneklerini kontrol etmek için:
 
-     ```bash
-     npm start
-     ```
+```bash
+npm start
+```
 
-   - To run the bot for **Arbitrum Sepolia**:
+- **Arbitrum için botu çalıştırmak için Sepolia**:
 
-     ```bash
-     npm run arbt
-     ```
+```bash
+npm run arbt
+```
 
-   - To run the bot for **Optimism Sepolia**:
+- **Optimism Sepolia** için botu çalıştırmak için:
 
-     ```bash
-     npm run opsp
-     ```
+```bash
+npm run opsp
+```
 
-## Usage
+## Kullanım
 
-- Use `npm start` to check the menu options available.
-- Choose the appropriate command based on the network you want to use.
-- The bot will automatically execute the transactions, handling any errors and retrying as needed.
+- Kullanılabilir menü seçeneklerini kontrol etmek için `npm start` kullanın.
+- Kullanmak istediğiniz ağa göre uygun komutu seçin.
+- Bot, işlemleri otomatik olarak yürütecek, hataları ele alacak ve gerektiğinde yeniden deneyecektir.
 
-## Donations
+## Bağışlar
 
-If you would like to support the development of this project, you can make a donation using the following addresses:
+Bu projenin gelişimini desteklemek isterseniz, aşağıdaki adresleri kullanarak bağış yapabilirsiniz:
 
 - **Solana**: `GLQMG8j23ookY8Af1uLUg4CQzuQYhXcx56rkpZkyiJvP`
 - **EVM**: `0x960EDa0D16f4D70df60629117ad6e5F1E13B8F44`
 - **BTC**: `bc1p9za9ctgwwvc7amdng8gvrjpwhnhnwaxzj3nfv07szqwrsrudfh6qvvxrj8`
 
-## License
+## Lisans
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+Bu proje MIT Lisansı altında lisanslanmıştır. Ayrıntılar için [LICENSE](LICENSE) dosyasına bakın.
